@@ -92,3 +92,35 @@ body{
     color: blue;
 }
 
+#dom-heading{
+    color: blue;
+}
+
+#heading3{
+    font-size:large;
+    font-weight:700;
+}
+
+#color-p{
+    color: blue;
+}
+
+#dom-demo-section{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 200px;
+    width: 500px;
+}
+
+#comparision{
+    background-color: rgb(233, 233, 233);
+    height: 120px;
+    width: 480px;
+}
+
+#comparision-text{
+    background-color: white;
+    height: 90px;
+    width: 480px;
+}
