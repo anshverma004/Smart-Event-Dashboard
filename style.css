@@ -27,6 +27,7 @@ body{
     height: 30px;
     width: 200px;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
 #description{
@@ -53,5 +54,41 @@ body{
     width: 250px;
     background-color: white;
     border-radius: 15px;
+}
+
+#my-event-list{
+    margin: auto;
+    width: 750px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+}
+
+#clear-all-event{
+    height: 30px;
+    width: 350px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+}
+
+#add-sample-event{
+    height: 30px;
+    width: 350px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+}
+
+#para{
+    font-size: medium;
+    font-weight: 100;
+    padding: 35px;
+}
+
+#my-event-heading{
+    color: blue;
 }
 
