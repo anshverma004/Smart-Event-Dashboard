@@ -7,89 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <h1>🎯 Smart Event Dashboard</h1>
     <div>
-    <h1 id="heading">🎯Smart Event Dasboard</h1>
-    <br>
-    <br>
-    </div>
-    </header>
-    <main class="main">
-    <div id="add-event-form">
-        <h2 id="add-event-heading">Add New Event</h2>
-        <br>
-        <div id="form">
+        <div>
+            <h2 class="heading-color-blue">Add New Event</h2>
             <form>
-                <label for="event-title">Event Title: </label>
-                <br>
-                <input type="text" id="event-title" class="input" required>
-                <br>
-                <br>
+                <label for="event-name">Event Name: </label>
+                <input type="text" id="event-name">
                 <label for="event-date">Event Date: </label>
-                <br>
-                <input type="date" id="event-date" class="input" required>
-                <br>
-                <br>
+                <input type="date" id="event-date">
                 <label for="category">Category: </label>
-                <br>
-                <select id="category" class="input" required>
-                    <option value="select">Select Category</option>
-                    <option value="workshop">Workshop</option>
-                    <option value="seminar">Seminar</option>
-                    <option value="conference">Conference</option>
+                <select id="category">
+                    <option value="Select Category">Select Category</option>
+                    <option value="Conference">Conference</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Seminar">Seminar</option>
                 </select>
-                <br>
-                <br>
                 <label for="description">Description: </label>
-                <br>
-                <textarea id="description" rows="4" cols="30" class="input" required></textarea>
-                <br>
-                <br>
-                <button id="add-event-btn">Add Event</button>
+                <textarea id="description"></textarea>
+                <button type="submit" class="button-color-purple">Add Event</button>
             </form>
         </div>
+        <div>
+            <h2 class="heading-color-blue">My Events</h2>
+            <button class="button-color-purple">Clear All Events</button>
+            <button class="button-color-purple">Add Sample Events</button>
+            <p>No events yet. Add your first event!</p>
+        </div>
     </div>
-    </main>
-    <br>
-    <br>
-    <section>
-        <div id="my-event-list">
-            <h2 id="my-event-heading">My Events</h2>
-            <br>
-            <div class="btn">
-                <button id="clear-all-event">Clear All Events</button>
-                <button id="add-sample-event">Add Sample Events</button>
-            </div>
-            <br>
-            <br>
-            <div id="para">
-                <p>No events yet. Add your first event!</p>
+    <div class="color-white">
+        <h2 class="heading-color-blue">DOM Manipulation Demo</h2>
+        <div class="color-grey">
+            <h3>innerText vs innerHTML vs TextContent</h3>
+            <div class="color-white">
+                <p><strong>Original HTML: </strong> &lt;strong&gt;Bold Text&lt;/strong&gt; with spaces.</p>
+                <p><strong>innerHTML: </strong> Renders HTML tags &rightarrow; <strong>Bold Text</strong> with spaces.
+                </p>
+                <p><strong>innerText: </strong> Remove HTML, collapses spaces &rightarrow; Bold Text with spaces.</p>
+                <p><strong>textContent: </strong> Removes HTML, keeps spaces &rightarrow; Bold Text with spaces.</p>
+                <p id="color-blue">You pressed: <strong>Shift</strong></p>
             </div>
         </div>
-    </section>
-    <br>
-    <br>
-    <section>
-        <div id="dom-demo-section">
-            <h2 id="dom-heading">DOM Manipulation Demo</h2>
-            <br>
-            <div id="comparision">
-                <h3 id="heading3">innerText vs innerHTML vs TextContent</h3>
-                <!-- <br> -->
-                <div id="comparision-text">
-                    <p><strong>Original HTML: </strong> &lt;strong&gt;Bold Text&lt;/strong&gt; with spaces</p>
-                    <!-- <br> -->
-                    <p><strong>innerHTML: </strong> Renders HTML tags &rightarrow; <strong>Bold Text</strong> with spaces</p>
-                    <!-- <br> -->
-                    <p><strong>innerText: </strong> Removes HTML, collapses spaces &rightarrow; Bold Text with spaces</p>
-                    <!-- <br> -->
-                    <p><strong>textContent: </strong>Removes HTML, keeps spaces &rightarrow; Bold Text with spaces</p>
-                    <!-- <br> -->
-                    <p id="color-p">You pressed: <strong>Shift</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

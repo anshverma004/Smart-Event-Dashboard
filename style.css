@@ -4,123 +4,16 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: black;
-} 
-
-#heading{
-    color: white;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
-
-#form{
-    font-size: larger;
-    font-weight: 700;
-}
-
-#add-event-heading{
+.heading-color-blue{
     color: blue;
 }
 
-.input{
-    height: 30px;
-    width: 200px;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-#description{
-    height: 50px;
-    width: 200px;
-}
-
-#add-event-btn{
-    height: 40px;
-    width: 200px;
-    background-color:purple;
-    color: white;
-    border-radius: 10px;
-}
-
-.main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    margin: auto;
-    border: 2px solid white;
-    height: 450px;
-    width: 250px;
-    background-color: white;
-    border-radius: 15px;
-}
-
-#my-event-list{
-    margin: auto;
-    width: 750px;
-    height: 450px;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: white;
-}
-
-#clear-all-event{
-    height: 30px;
-    width: 350px;
+.button-color-purple{
     background-color: purple;
     color: white;
-    border-radius: 10px;
 }
 
-#add-sample-event{
-    height: 30px;
-    width: 350px;
-    background-color: purple;
-    color: white;
-    border-radius: 10px;
-}
-
-#para{
-    font-size: medium;
-    font-weight: 100;
-    padding: 35px;
-}
-
-#my-event-heading{
+#color-blue{
     color: blue;
 }
 
-#dom-heading{
-    color: blue;
-}
-
-#heading3{
-    font-size:large;
-    font-weight:700;
-}
-
-#color-p{
-    color: blue;
-}
-
-#dom-demo-section{
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    height: 200px;
-    width: 500px;
-}
-
-#comparision{
-    background-color: rgb(233, 233, 233);
-    height: 120px;
-    width: 480px;
-}
-
-#comparision-text{
-    background-color: white;
-    height: 90px;
-    width: 480px;
-}
