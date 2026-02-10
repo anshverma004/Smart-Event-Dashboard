@@ -15,35 +15,34 @@
             <h2 class="heading-color-blue">Add New Event</h2>
             <br>
             <form>
-                <label for="event-name">Event Name: </label>
+                <label for="event-name" class="bold-text">Event Name: </label>
                 <br>
                 <input type="text" id="event-name" class="input">
                 <br>
-                <label for="event-date">Event Date: </label>
+                <label for="event-date" class="bold-text">Event Date: </label>
                 <br>
                 <input type="date" id="event-date" class="input">
                 <br>
-                <label for="category">Category: </label>
+                <label for="category" class="bold-text">Category: </label>
                 <br>
                 <select id="category" class="input">
-                    <option value="Select Category">Select Category</option>
                     <option value="Conference">Conference</option>
                     <option value="Workshop">Workshop</option>
                     <option value="Seminar">Seminar</option>
                 </select>
                 <br>
-                <label for="description">Description: </label>
+                <label for="description" class="bold-text">Description: </label>
                 <br>
                 <textarea id="description" class="input"></textarea>
                 <br>
-                <button type="submit" class="button-color-purple">Add Event</button>
+                <button type="submit" class="button-color-purple" id="add-event">Add Event</button>
             </form>
         </div>
         <div id="event2">
             <h2 class="heading-color-blue">My Events</h2>
             <br>
-            <button class="button-color-purple">Clear All Events</button>
-            <button class="button-color-purple">Add Sample Events</button>
+            <button class="button-color-purple btn">Clear All Events</button>
+            <button class="button-color-purple btn">Add Sample Events</button>
             <br>
             <br>
             <p>No events yet. Add your first event!</p>
@@ -65,5 +64,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
