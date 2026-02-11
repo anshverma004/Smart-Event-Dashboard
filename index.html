@@ -6,62 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Event Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <h1 id="main-heading">🎯 Smart Event Dashboard</h1>
-    <div class="event">
-        <div id="event1">
-            <h2 class="heading-color-blue">Add New Event</h2>
-            <br>
-            <form>
-                <label for="event-name" class="bold-text">Event Name: </label>
-                <br>
-                <input type="text" id="event-name" class="input">
-                <br>
-                <label for="event-date" class="bold-text">Event Date: </label>
-                <br>
-                <input type="date" id="event-date" class="input">
-                <br>
-                <label for="category" class="bold-text">Category: </label>
-                <br>
-                <select id="category" class="input">
-                    <option value="Conference">Conference</option>
-                    <option value="Workshop">Workshop</option>
-                    <option value="Seminar">Seminar</option>
-                </select>
-                <br>
-                <label for="description" class="bold-text">Description: </label>
-                <br>
-                <textarea id="description" class="input"></textarea>
-                <br>
-                <button type="submit" class="button-color-purple" id="add-event">Add Event</button>
-            </form>
+    <h1>🎯 Smart Event Dashboard</h1>
+    <div class="parent">
+        <div class="event-form">
+            <h2>New Event</h2>
+            <label for="eventInput">Event Name</label>
+            <input type="text" id="eventInput" placeholder="Enter title...">
+
+            <label for="eventDate">Date</label>
+            <input type="date" id="eventDate">
+
+            <label for="eventCategory">Category</label>
+            <select id="eventCategory">
+                <option value="conference">Conference</option>
+                <option value="social">Social</option>
+                <option value="bootcamp">Bootcamp</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea id="description" rows="4" placeholder="Brief details..."></textarea>
+
+            <button id="addEventButton">Create Event</button>
         </div>
-        <div id="event2">
-            <h2 class="heading-color-blue">My Events</h2>
-            <br>
-            <button class="button-color-purple btn">Clear All Events</button>
-            <button class="button-color-purple btn">Add Sample Events</button>
-            <br>
-            <br>
-            <p>No events yet. Add your first event!</p>
-        </div>
-    </div>
-    <div class="color-white">
-        <h2 class="heading-color-blue">DOM Manipulation Demo</h2>
-        <div class="color-grey">
-            <h3>innerText vs innerHTML vs TextContent</h3>
-            <div class="color-white">
-                <p class="color-black"><strong>Original HTML: </strong> &lt;strong&gt;Bold Text&lt;/strong&gt; with spaces.</p>
-                <p class="color-black"><strong>innerHTML: </strong> Renders HTML tags &rightarrow; <strong>Bold Text</strong> with spaces.
-                </p>
-                <p class="color-black"><strong>innerText: </strong> Remove HTML, collapses spaces &rightarrow; Bold Text with spaces.</p>
-                <p class="color-black"><strong>textContent: </strong> Removes HTML, keeps spaces &rightarrow; Bold Text with spaces.</p>
-                <p id="color-blue">You pressed: <strong>Shift</strong></p>
+
+        <div class="My-events">
+            <div class="header-group">
+                <h2>Live Events</h2>
+                <div class="controls">
+                    <button id="clearAllButton" class="action-btn clear">Clear All</button>
+                    <button id="addSampleButton" class="action-btn sample">Add Sample</button>
+                </div>
             </div>
+            <div id="gridcard" class="gridcard"></div>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
+
 </html>
